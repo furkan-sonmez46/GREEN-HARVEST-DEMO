@@ -1,1 +1,2 @@
-# tak-m-deneme
+# GreenHarvest
+GOIT-HTML/CSS-TeamProject-GreenHarvest

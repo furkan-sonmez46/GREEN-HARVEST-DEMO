@@ -1,27 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Harvest</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" 
-    rel="stylesheet"/>
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    <header></header>
     <section>Hero</section>
     <section>How It Works</section>
     <section>Advertisement</section>
     <section>Vegetables</section>
     <section>Reviews</section>
-    <section>Your Order</section>
-    <footer>
-        
-    </footer>
-</body>
+    <section class="your-order">
+      <div class="container">
+        <div class="order-title">
+          <h1 class="fresh">
+            Fresh
+            <span class="harvest"> Harvest</span> Box has got you covered
+          </h1>
+          <p class="fresh-content">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+        </div>
+        <div class="form-and-social">
+          <div class="form-div">
+            <form
+              class="order-form"
+              action="./person"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <h3 class="form-title">
+                Ordering <span class="from-us">from us</span> is quick and easy!
+                Fill out <span class="the-form">the form</span> below and we
+                will contact you !
+              </h3>
+              <input
+                class="form-inputs"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                class="form-inputs"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                required
+              />
+              <textarea
+                class="form-comment"
+                id="comment"
+                name="comment"
+                placeholder="Comment"
+                required
+              ></textarea>
+              <button type="button" class="send-button">SEND</button>
+            </form>
+          </div>
+          <div class="social-networks">
+            <img
+              src="./images/networks.jpg"
+              class="responsive-image"
+              alt="social-networks"
+              width="427"
+            />
+            <div class="networks">
+              <p>Follow us on our social networks:</p>
+              <ul class="networks-list">
+                <li>
+                  <a
+                    href="https://www.instagram.com/goit.turkiye/"
+                    class="social-media"
+                    >instagram</a
+                  >
+                </li>
+                /
+                <li>
+                  <a
+                    href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                    class="social-media"
+                    >facebook</a
+                  >
+                </li>
+                /
+                <li>
+                  <a
+                    href="https://m.youtube.com/@GoITTurkey"
+                    class="social-media"
+                    >youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
 </html>
