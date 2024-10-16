@@ -8,7 +8,6 @@ body {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 100px;
   align-items: center;
 }
 p,
@@ -26,6 +25,7 @@ ul {
 img {
   display: block;
 }
+
 .advertisement {
   width: Hug (1, 280px) px;
   height: Hug (440px) px;
@@ -80,3 +80,72 @@ img {
   overflow: hidden;
 }
 
+/* div for images and background color */
+.menu-container {
+  display: flex;
+}
+.background {
+  background-color: rgba(87, 111, 53, 1);
+  height: 800px;
+  width: 50%;
+  padding: 0px 0px 0px 100px;
+}
+.background-image {
+  background-image: url(/images/image\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 800px;
+  z-index: -1;
+}
+/* div for images and background color END */
+/* HEADER */
+header {
+  padding-top: 30px;
+}
+.menu-nav {
+  display: flex;
+  max-width: 1080px;
+}
+/*.logo-list {
+  margin-right: 850px;
+}*/
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+.logo-div {
+  display: flex;
+  gap: 800px;
+  width: 100%;
+}
+.logo-svg {
+  width: 194px;
+  height: 18px;
+}
+.list {
+  width: 120px;
+}
+.menu {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  width: 114px;
+  height: 44px;
+  padding: 12px 0px 0px 0px;
+  gap: 10px;
+  border: 1px 0px 0px 0px;
+  padding: 8px 10px 8px 10px;
+}
+/*
+.button {
+  width: 157px;
+  height: 52px;
+  padding: 16px 32px 16px 32px;
+  border-radius: 30px;
+  background: rgba(122, 49, 69, 1);
+  margin-top: -15px;
+}*/
+/* HERO-SECTİON */
