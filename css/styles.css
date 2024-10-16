@@ -33,8 +33,6 @@ img {
   display: block;
 }
 
-
-=======
 /* div for images and background color */
 .menu-container {
   display: flex;
@@ -572,6 +570,7 @@ header {
 
 .footer-text {
   font-family: "Inter Tight", sans-serif;
+}
   
 
 .footer-nav-list {
