@@ -26,6 +26,154 @@ img {
   display: block;
 }
 
+
+.reviews {
+  background-color: #fbfbfb;
+  width: 100%;
+  margin: 0 auto;
+}
+.reviews-title {
+  max-width: 553px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.reviews-from {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: -1.5%;
+  color: #141414;
+  line-height: 1;
+  text-align: left;
+}
+.customers {
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: -1.5%;
+  color: #576f35;
+  line-height: 1;
+  text-align: left;
+}
+.reviews-p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #141414;
+  line-height: 1.25;
+}
+.reviews-list {
+  display: flex;
+  margin-top: 50px;
+}
+.reviews-person-list {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+.reviews-person-list-item-one {
+  width: calc(100% / 3 - 50px);
+  border: 1px solid #7a31454d;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.reviews-person-list-item-two {
+  width: calc(100% / 3 - 50px);
+  border: 1px solid #7a31454d;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.reviews-person-list-item-three {
+  width: calc(100% / 3 - 50px);
+  border: 1px solid #7a31454d;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.reviews-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -2%;
+  color: #141414;
+  line-height: 1.1;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.reviews-list-p {
+  font-weight: 500;
+  color: #14141466;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  .container{
+  
+    padding: 80px 20px;
+  }
+  .reviews-person-list-item-two,
+  .reviews-person-list-item-three {
+    display: none;
+  }
+  .reviews-person-list-item-one {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 38px;
+    margin: 0 auto;
+  }
+  .reviews-from,
+  .customers {
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -1.5%;
+  }
+  .reviews-p {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .reviews-list-title {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -2%;
+  }
+  .reviews-list-p {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+}
+@media (min-width: 768px) {
+  .reviews-person-list-item-three {
+    display: none;
+  }
+  .reviews-person-list-item-one,
+  .reviews-person-list-item-two {
+    width: calc((100% - 18px) / 2);
+    display: flex;
+  }
+}
+@media (min-width: 1280px) {
+  .reviews-person-list-item-two,
+  .reviews-person-list-item-one,
+  .reviews-person-list-item-three {
+    display: flex;
+    width: calc((100% - 50px) / 3);
+  }
+  .reviews-person-list{
+    justify-content: space-between;
+  }
+}
+=======
 .advertisement {
   width: Hug (1, 280px) px;
   height: Hug (440px) px;
@@ -149,3 +297,4 @@ header {
   margin-top: -15px;
 }*/
 /* HERO-SECTİON */
+
