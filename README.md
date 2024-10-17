@@ -1,2 +1,2 @@
-# GreenHarvest
-GOIT-HTML/CSS-TeamProject-GreenHarvest
+# GreenHarvest -- DİKKAT DENEME REPOSUDUR!
+
