@@ -366,6 +366,126 @@ body {
     overflow: hidden;
   }
 
+.vegetables {
+  width: 90%; /* Mobilde genişlik sınırlı olacak */
+  margin: 50px auto;
+  padding: 20px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.organic {
+  font-size: 64px; /* Font büyüklüğü */
+  font-weight: 600; /* Kalınlık */
+  line-height: 64px; /* Satır yüksekliği */
+  letter-spacing: -1.5%; /* Harf aralığı */
+  color: #FFFFFF; /* Beyaz renk */
+}
+.vegetables-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 64px;
+  letter-spacing: -1.5%;
+  color: rgba(255, 255, 255, 0.5); /* Daha silik renk için opaklık */
+  position: absolute;
+  top: 64px; /* "Organic" yazısının hemen altına yerleştirmek için */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.description {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7); /* Açıklama metni rengi */
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr; /* Mobilde tek sütun */
+  gap: 20px;
+}
+.product-item {
+  background-color: #fff;
+  color: #7A3145;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.product-item h2 {
+  margin-top: 10px;
+  font-size: 1.2rem; /* Mobil için daha küçük */
+}
+.product-item p {
+  margin-top: 5px;
+  font-size: 0.9rem; /* Mobil için daha küçük */
+}
+/* Tablet için düzenlemeler */
+@media (min-width: 768px) {
+  .vegetables {
+      width: 80%; /* Tablette genişlik artar */
+      padding: 50px;
+  }
+  .organic {
+      font-size: 2.5rem; /* Tablette biraz daha büyük */
+  }
+  .vegetables-title {
+      font-size: 2rem; /* Tablette büyütülür */
+      top: 35px;
+  }
+  .description {
+      font-size: 1rem;
+      max-width: 600px; /* Tablette açıklama biraz genişler */
+  }
+  .product-list {
+      grid-template-columns: repeat(2, 1fr); /* Tablette iki sütun */
+      gap: 30px;
+  }
+  .product-item h2 {
+      font-size: 1.4rem;
+  }
+  .product-item p {
+      font-size: 1rem;
+  }
+}
+/* Desktop için düzenlemeler */
+@media (min-width: 1158px) {
+  .vegetables {
+      width: 1280px; /* Desktop genişliği */
+      padding: 100px;
+  }
+  .organic {
+      font-size: 3rem;
+  }
+  .vegetables-title {
+      font-size: 2.5rem;
+      top: 40px;
+  }
+  .description {
+      font-size: 1rem;
+      max-width: 700px;
+  }
+  .product-list {
+      grid-template-columns: repeat(3, 1fr); /* Desktop'ta üç sütun */
+      gap: 50px;
+  }
+  .product-item h2 {
+      font-size: 1.5rem;
+  }
+  .product-item p {
+      font-size: 1rem;
+  }
+}
+
   .reviews {
     background-color: #fbfbfb;
     width: 100%;
