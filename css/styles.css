@@ -342,6 +342,7 @@ background-color: #622133;
 .text-section p {
     margin-bottom: 20px;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .steps {
@@ -459,20 +460,34 @@ background-color: #622133;
         width: 100%;
         border-radius: 30px;
     }
+    .steps p{
+        font-size: 16px;
+    }
 }
 
 @media (min-width:1280px) {
-    .works {
+.works {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
     }
 
     .athletic-woman {
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
         padding: 100px;
     }
 
     .text-section {
-        width: 100%;
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
         padding: 100px 160px;
+    }
+    .steps p{
+        font-size: 16px;
     }
 }
 
