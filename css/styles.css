@@ -537,123 +537,97 @@ background-color: #622133;
     overflow: hidden;
   }
 
+* Vegetables bölümü */
 .vegetables {
-  width: 90%; /* Mobilde genişlik sınırlı olacak */
-  margin: 50px auto;
-  padding: 20px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
+h1.organic-vegetables {
+  font-size: 64px;
+  margin: 0 0 10px 20px;
 }
-.organic {
-  font-size: 64px; /* Font büyüklüğü */
-  font-weight: 600; /* Kalınlık */
-  line-height: 64px; /* Satır yüksekliği */
-  letter-spacing: -1.5%; /* Harf aralığı */
-  color: #FFFFFF; /* Beyaz renk */
-}
-.vegetables-title {
+h1.organic-vegetables::after {
+  content: "VEGETABLES";
+  display: block;
   font-size: 64px;
   font-weight: 600;
-  line-height: 64px;
-  letter-spacing: -1.5%;
-  color: rgba(255, 255, 255, 0.5); /* Daha silik renk için opaklık */
-  position: absolute;
-  top: 64px; /* "Organic" yazısının hemen altına yerleştirmek için */
-  left: 50%;
-  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: -10px;
+  left: 0;
 }
+/* Açıklama bölümü */
 .description {
-  text-align: center;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7); /* Açıklama metni rengi */
   margin-top: 20px;
+  font-size: 16px;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
 }
+/* Ürün listesi */
 .product-list {
-  list-style-type: none;
+  list-style: none;
   display: grid;
-  grid-template-columns: 1fr; /* Mobilde tek sütun */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
 }
+/* Ürün kartları */
 .product-item {
   background-color: #fff;
   color: #7A3145;
-  padding: 15px;
-  border-radius: 15px;
+  border-radius: 20px;
+  padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.product-item:hover {
+  transform: scale(1.05);
 }
 .product-item img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   border-radius: 10px;
 }
-.product-item h2 {
-  margin-top: 10px;
-  font-size: 1.2rem; /* Mobil için daha küçük */
+/* Başlık ve paragraf stilleri */
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
 }
-.product-item p {
-  margin-top: 5px;
-  font-size: 0.9rem; /* Mobil için daha küçük */
+p {
+  font-size: 18px;
 }
-/* Tablet için düzenlemeler */
-@media (min-width: 768px) {
-  .vegetables {
-      width: 80%; /* Tablette genişlik artar */
-      padding: 50px;
+/* Tablet ve mobil düzenlemeler */
+@media (max-width: 1158px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
-  .organic {
-      font-size: 2.5rem; /* Tablette biraz daha büyük */
+}
+@media (max-width: 768px) {
+  h1.organic-vegetables {
+    font-size: 48px;
   }
-  .vegetables-title {
-      font-size: 2rem; /* Tablette büyütülür */
-      top: 35px;
+  h1.organic-vegetables::after {
+    font-size: 48px;
+    top: 48px;
   }
   .description {
-      font-size: 1rem;
-      max-width: 600px; /* Tablette açıklama biraz genişler */
+    font-size: 14px;
+    margin-top: 70px;
   }
   .product-list {
-      grid-template-columns: repeat(2, 1fr); /* Tablette iki sütun */
-      gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .product-item h2 {
-      font-size: 1.4rem;
+  h2 {
+    font-size: 20px;
   }
-  .product-item p {
-      font-size: 1rem;
-  }
-}
-/* Desktop için düzenlemeler */
-@media (min-width: 1158px) {
-  .vegetables {
-      width: 1280px; /* Desktop genişliği */
-      padding: 100px;
-  }
-  .organic {
-      font-size: 3rem;
-  }
-  .vegetables-title {
-      font-size: 2.5rem;
-      top: 40px;
-  }
-  .description {
-      font-size: 1rem;
-      max-width: 700px;
-  }
-  .product-list {
-      grid-template-columns: repeat(3, 1fr); /* Desktop'ta üç sütun */
-      gap: 50px;
-  }
-  .product-item h2 {
-      font-size: 1.5rem;
-  }
-  .product-item p {
-      font-size: 1rem;
+  p {
+    font-size: 16px;
   }
 }
 
