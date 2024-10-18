@@ -866,22 +866,6 @@ body {
     padding: 72px;
   }
   
-  .footer-ending {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: rgba(251, 251, 251, 0.5);
-    padding: 72px;
-    margin: 0 auto;
-  }
-  
-  .footer-ending a {
-    list-style-type: none;
-    text-decoration: none;
-    font-family: inherit;
-    color: rgba(251, 251, 251, 0.5);
-  }
-  
   .footer-logo-a {
     display: inline-block;
     margin-bottom: 25px;
@@ -933,4 +917,20 @@ body {
     list-style-type: none;
     font-style: normal;
     color: #fbfbfb;
+  }
+
+  .footer-ending {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(251, 251, 251, 0.5);
+    padding: 72px;
+    margin: 0 auto;
+  }
+  
+  .footer-ending a {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: inherit;
+    color: rgba(251, 251, 251, 0.5);
   }
