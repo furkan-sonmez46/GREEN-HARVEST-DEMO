@@ -863,6 +863,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     vertical-align: baseline;
+<<<<<<< HEAD
   }
   
   .footer-ending {
@@ -885,6 +886,9 @@ body {
     text-decoration: none;
     font-family: inherit;
     color: rgba(251, 251, 251, 0.5);
+=======
+    padding: 72px;
+>>>>>>> a094e4a5f462f4c211e68ff6cc5a8285ca1dfe3f
   }
   
   .footer-logo-a {
@@ -945,4 +949,21 @@ body {
     list-style-type: none;
     font-style: normal;
     color: #fbfbfb;
+  }
+
+  .footer-ending {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(251, 251, 251, 0.5);
+    padding: 72px;
+    margin: 0 auto;
+  }
+  
+  .footer-ending a {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: inherit;
+    color: rgba(251, 251, 251, 0.5);
   }
