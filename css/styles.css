@@ -879,12 +879,10 @@ body {
     text-align: left;
   }
 
-  .footer-nav-and-add {
+  .footer-nav-menu {
     display: flex;
-    justify-content: space-between;
-
+    gap: 130px;
   }
-
   
   .footer-nav-list {
     list-style-type: none;
