@@ -859,19 +859,15 @@ body {
   }
   
   .container-footer {
-    max-width: 1080px;
-    height: 146px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     vertical-align: baseline;
-    padding: 50px 100px 100px 100px;
+    padding: 72px;
   }
   
   .footer-ending {
-    max-width: 1080px;
-    height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -881,7 +877,7 @@ body {
     list-style-type: none;
     text-decoration: none;
     font-family: inherit;
-    padding: 200px 100px 200px 100px;
+    padding: 72px;
     margin: 0 auto;
   }
   
