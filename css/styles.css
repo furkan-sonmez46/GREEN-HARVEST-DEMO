@@ -870,12 +870,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    vertical-align: baseline;
     color: rgba(251, 251, 251, 0.5);
-    list-style-type: none;
-    text-decoration: none;
-    font-family: inherit;
     padding: 72px;
     margin: 0 auto;
   }
