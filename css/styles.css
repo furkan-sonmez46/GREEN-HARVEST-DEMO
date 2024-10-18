@@ -483,59 +483,102 @@ background-color: #622133;
     }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .advertisement {
-    width: Hug (1, 280px) px;
-    height: Hug (440px) px;
-    top: 1559px;
-    gap: 10px;
-    opacity: 0px;
-    background: rgba(251, 251, 251, 1);
-  
+  width: 100%;
+  margin: 0 auto;
+}
+.advert-text {
+  width: 1280px;
+  height: 240px;
+  font-size: 76px;
+  gap: 0px;
+  opacity: 0px;
+  width: 100%;
+  display: flex;
+  text-align: left;
+}
+.disc-text {
+  width: 100%;
+  font-size: 76px;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  letter-spacing: -0.015em;
+  flex-wrap: wrap;
+}
+.discount-span {
+  max-width: 808px;
+  width: 100%;
+  font-size: 76px;
+  letter-spacing: -0.015em;
+  color: rgba(251, 251, 251, 1);
+  background: rgba(87, 111, 53, 1);
+  padding: 5px;
+  border-radius: 12px;
+}
+@media (min-width: 375px) {
+  .container {
+    padding-left: 15%;
   }
-  
-  .advert-text {
-  
-    width: 1054px;
-    height: 240px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Inter Tight;
-    font-size: 76px;
-    font-weight: 600;
-    line-height: 80px;
-    letter-spacing: -0.015em;
-    text-align: left;
-    text-transform: uppercase;
-  
+  .disc-text {
+    font-size: 48px;
+    line-height: 50px;
   }
-  
   .discount-span {
-    width: 808px;
-    height: 86px;
-    gap: 0px;
-    border-radius: 12px;
-    font-family: Inter Tight;
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .advert-text {
+    width: 335px;
+    height: 306px;
+    top: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .disc-text {
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .discount-span {
+    font-size: 64px;
+    line-height: 70px;
+  }
+  .advert-text {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .disc-text {
     font-size: 76px;
     font-weight: 600;
     line-height: 80px;
     letter-spacing: -0.015em;
     text-align: left;
-    color: rgba(251, 251, 251, 1);
-    background: rgba(87, 111, 53, 1);
   }
-  .visually-hidden {
-   
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  .discount-span {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: -0.015em;
+    text-align: left;
   }
+  .advert-text {
+    width: 100%;
+  }
+}
 
 * Vegetables bölümü */
 .vegetables {
