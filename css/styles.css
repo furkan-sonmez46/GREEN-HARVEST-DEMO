@@ -575,3 +575,93 @@ header {
     font-size: 16px;
   }
 }
+
+.advertisement {
+  width: Hug (1, 280px) px;
+  height: Hug (440px) px;
+  top: 1559px;
+  gap: 10px;
+  opacity: 0px;
+  background: rgba(251, 251, 251, 1);
+
+}
+
+.advert-text {
+  height: 240px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+.discount-span {
+  max-width: 808px;
+  height: 86px;
+  gap: 0px;
+  border-radius: 12px;
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: rgba(251, 251, 251, 1);
+  background: rgba(87, 111, 53, 1);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 375px){
+.advert-text {
+font-size: 64px;
+line-height: 70px;
+} 
+
+.discount-span {
+  font-size: 64px;
+  line-height: 70px;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+  .advert-text {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+
+  .discount-span {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+  
+}
+
+@media screen and (min-width: 1280px) {
+  .advert-text {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+
+  .discount-span {
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+}
