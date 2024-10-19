@@ -1,2 +1,0 @@
-# GreenHarvest -- DİKKAT DENEME REPOSUDUR!
-
