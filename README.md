@@ -1,1 +1,0 @@
-# tak-m-deneme
