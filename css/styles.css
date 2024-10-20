@@ -1324,12 +1324,13 @@ p {
   .container-footer {
     flex-direction: column; /* Dikey dizilim */
     padding: 20px; /* Küçük ekranlar için daha az padding */
+    gap: 40px;
   }
 
   .footer-ending {
     flex-direction: row; /* Yatay dizilim */
     justify-content: space-between; /* Elemanları yatay sırala */
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   .footer-nav-menu {
@@ -1343,8 +1344,9 @@ p {
 
 @media (min-width: 375px) {
   .container-footer {
-    flex-direction: column; /* Dikey dizilim */
+    flex-direction: row; /* Yatay dizilim */
     padding: 40px; /* Orta boyutlu ekranlar için padding */
+    gap: 40px;
   }
 
   .footer-nav-menu {
@@ -1352,8 +1354,9 @@ p {
   }
 
   .footer-ending {
-    flex-direction: column; /* Dikey dizilim */
+    flex-direction: row; /* Yatay dizilim */
     align-items: center; /* Ortaya hizalama */
+    justify-content: space-between;
     padding: 40px;
   }
 
@@ -1364,7 +1367,7 @@ p {
 
 @media (min-width: 768px) {
   .container-footer {
-    flex-direction: column; /* Dikey dizilim */
+    flex-direction: row; /* Yatay dizilim */
     padding: 72px;
   }
 
